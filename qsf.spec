@@ -1,12 +1,12 @@
 Summary:	Quick spam filter
 Summary(pl):	Szybki filtr antyspamowy
 Name:		qsf
-Version:	0.9.9
-Release:	0.1
+Version:	0.9.18
+Release:	1
 License:	Artistic
 Group:		Applications
-Source0:	http://dl.sourceforge.net/qsf/%{name}-%{version}.tar.gz
-# Source0-md5:	dfd9e79f049c1e9832f8d70e2c84fe7e
+Source0:	http://dl.sourceforge.net/qsf/%{name}-%{version}.tar.bz2
+# Source0-md5:	d87e90603140dc35d2f4d154468c51f8
 URL:		http://www.ivarch.com/programs/qsf.shtml
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -26,7 +26,7 @@ procmaila do oznaczania poczty bêd±cej prawdopodobnie spamem.
 %setup -q
 
 %build
-%configure2_13
+%configure
 %{__make}
 
 %install
