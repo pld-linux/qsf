@@ -1,4 +1,5 @@
 Summary:	Quick spam filter
+Summary(pl):	Szybki filtr antyspamowy
 Name:		qsf
 Version:	0.9.9
 Release:	0.1
@@ -14,6 +15,12 @@ Quick Spam Filter (qsf) is a small, fast spam filter that works by
 learning to recognise the words that are more likely to appear in spam
 than non-spam. It is intended to be used in a procmail recipe to mark
 email as being possible spam.
+
+%description -l pl
+Quick Spam Filter (qsf) to ma³y, szybki filtr antyspamowy dzia³aj±cy
+poprzez uczenie siê rozpoznawania s³ów, które czê¶ciej wystêpuj± w
+spamie nie nie-spamie. Jest przeznaczony do u¿ywania w regu³ce
+procmaila do oznaczania poczty bêd±cej prawdopodobnie spamem.
 
 %prep
 %setup -q
