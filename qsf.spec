@@ -1,12 +1,12 @@
 Summary:	Quick spam filter
 Summary(pl):	Szybki filtr antyspamowy
 Name:		qsf
-Version:	0.9.18
+Version:	0.9.25
 Release:	1
 License:	Artistic
 Group:		Applications
 Source0:	http://dl.sourceforge.net/qsf/%{name}-%{version}.tar.bz2
-# Source0-md5:	d87e90603140dc35d2f4d154468c51f8
+# Source0-md5:	96e447377236fa656ca079079da3605b
 URL:		http://www.ivarch.com/programs/qsf.shtml
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -19,7 +19,7 @@ email as being possible spam.
 %description -l pl
 Quick Spam Filter (qsf) to ma³y, szybki filtr antyspamowy dzia³aj±cy
 poprzez uczenie siê rozpoznawania s³ów, które czê¶ciej wystêpuj± w
-spamie nie nie-spamie. Jest przeznaczony do u¿ywania w regu³ce
+spamie ni¿ nie-spamie. Jest przeznaczony do u¿ywania w regu³ce
 procmaila do oznaczania poczty bêd±cej prawdopodobnie spamem.
 
 %prep
