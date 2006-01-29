@@ -1,12 +1,12 @@
 Summary:	Quick spam filter
 Summary(pl):	Szybki filtr antyspamowy
 Name:		qsf
-Version:	1.0.18
+Version:	1.1.2
 Release:	1
 License:	Artistic
 Group:		Applications
 Source0:	http://dl.sourceforge.net/qsf/%{name}-%{version}.tar.bz2
-# Source0-md5:	975d3d9785d636c463a0b4eed21e91e1
+# Source0-md5:	97b0edd6bcbacbd4b0ee0f60d5313b08
 URL:		http://www.ivarch.com/programs/qsf.shtml
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
