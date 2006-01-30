@@ -1,3 +1,9 @@
+#
+# Conditional build:
+%bcond_without	gdbm		# build without gdbm backend
+%bcond_with	mysql		# build with MySQL backend
+%bcond_with	sqlite		# build with SQLite2 backend
+#
 Summary:	Quick spam filter
 Summary(pl):	Szybki filtr antyspamowy
 Name:		qsf
@@ -8,6 +14,9 @@ Group:		Applications
 Source0:	http://dl.sourceforge.net/qsf/%{name}-%{version}.tar.bz2
 # Source0-md5:	97b0edd6bcbacbd4b0ee0f60d5313b08
 URL:		http://www.ivarch.com/programs/qsf.shtml
+%{?with_gdbm:BuildRequires:	gdbm-devel}
+%{?with_mysql:BuildRequires:	mysql-devel}
+%{?with_sqlite:BuildRequires:	sqlite-devel}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -26,7 +35,10 @@ procmaila do oznaczania poczty bêd±cej prawdopodobnie spamem.
 %setup -q
 
 %build
-%configure
+%configure \
+	%{!?with_gdbm:--without-gdbm} \
+	%{!?with_mysql:--without-mysql} \
+	%{!?with_sqlite:--without-sqlite}
 %{__make}
 
 %install
@@ -40,6 +52,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README doc/{NEWS,TODO}
+%doc README doc/{NEWS,TODO,postfix-howto}
 %attr(755,root,root) %{_bindir}/*
 %{_mandir}/man1/*.1*
