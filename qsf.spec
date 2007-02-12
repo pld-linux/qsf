@@ -5,7 +5,7 @@
 %bcond_with	sqlite		# build with SQLite2 backend
 #
 Summary:	Quick spam filter
-Summary(pl):	Szybki filtr antyspamowy
+Summary(pl.UTF-8):   Szybki filtr antyspamowy
 Name:		qsf
 Version:	1.2.6
 Release:	1
@@ -25,11 +25,11 @@ learning to recognise the words that are more likely to appear in spam
 than non-spam. It is intended to be used in a procmail recipe to mark
 email as being possible spam.
 
-%description -l pl
-Quick Spam Filter (qsf) to ma³y, szybki filtr antyspamowy dzia³aj±cy
-poprzez uczenie siê rozpoznawania s³ów, które czê¶ciej wystêpuj± w
-spamie ni¿ nie-spamie. Jest przeznaczony do u¿ywania w regu³ce
-procmaila do oznaczania poczty bêd±cej prawdopodobnie spamem.
+%description -l pl.UTF-8
+Quick Spam Filter (qsf) to maÅ‚y, szybki filtr antyspamowy dziaÅ‚ajÄ…cy
+poprzez uczenie siÄ™ rozpoznawania sÅ‚Ã³w, ktÃ³re czÄ™Å›ciej wystÄ™pujÄ… w
+spamie niÅ¼ nie-spamie. Jest przeznaczony do uÅ¼ywania w reguÅ‚ce
+procmaila do oznaczania poczty bÄ™dÄ…cej prawdopodobnie spamem.
 
 %prep
 %setup -q
