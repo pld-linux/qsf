@@ -5,7 +5,7 @@
 %bcond_with	sqlite		# build with SQLite2 backend
 #
 Summary:	Quick spam filter
-Summary(pl.UTF-8):   Szybki filtr antyspamowy
+Summary(pl.UTF-8):	Szybki filtr antyspamowy
 Name:		qsf
 Version:	1.2.6
 Release:	1
