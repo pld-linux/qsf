@@ -7,12 +7,12 @@
 Summary:	Quick spam filter
 Summary(pl.UTF-8):	Szybki filtr antyspamowy
 Name:		qsf
-Version:	1.2.6
+Version:	1.2.7
 Release:	1
-License:	Artistic
+License:	Artistic 2.0
 Group:		Applications
 Source0:	http://dl.sourceforge.net/qsf/%{name}-%{version}.tar.bz2
-# Source0-md5:	45926441d247f72778a01092f6a83743
+# Source0-md5:	944bf93c835bea8bb1dbf88dae424601
 URL:		http://www.ivarch.com/programs/qsf.shtml
 %{?with_gdbm:BuildRequires:	gdbm-devel}
 %{?with_mysql:BuildRequires:	mysql-devel}
